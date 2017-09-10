@@ -2,7 +2,7 @@
 
 # Vue.js To-Do App
 
-This project stems from the completion of [this Vue.js 2 tutorial from scotch.io](https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2). It's a pretty lazy tutorial ripe with typos, which I was able to work around with my working knowledge of ES6 and React.
+This project stems from the completion of [this Vue.js 2 tutorial from scotch.io](https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2). It's an okay tutorial that gets progressively lazier and more abundant with typos, which I was able to work around given my working knowledge of ES6 and React.
 
 Follow the tutorial to get the basic gist of how Vue.js works, then clone my repo to check out my fixes to the issues.
 
