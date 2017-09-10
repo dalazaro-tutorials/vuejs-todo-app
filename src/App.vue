@@ -1,9 +1,9 @@
 <!-- This component gets rendered inside the div#app in index.html. -->
 <template>
   <div>
-    <!-- Renders TodoList component -->
+    <!-- invokes TodoList component -->
     <todo-list v-bind:todos="todos"></todo-list>
-    <!-- Renders CreateTodo component -->
+    <!-- invokes CreateTodo component -->
     <create-todo v-on:create-todo="createTodo"></create-todo>
   </div>
 </template>
@@ -23,19 +23,19 @@ export default {
     return {
       todos: [{
         title: 'Ready job search materials',
-        project: 'Personal portfolio / Resume / LinkedIn / Clean-up GitHub',
+        description: 'Personal portfolio / Resume / LinkedIn / Clean-up GitHub',
         done: true,
       }, {
         title: 'Lightning Talk',
-        project: 'Prep and present Vue.js',
+        description: 'Prep and present Vue.js',
         done: false,
       }, {
         title: 'WDI 39 Final Project',
-        project: 'Plan / Develop / Present',
+        description: 'Plan / Develop / Present',
         done: false,
       }, {
         title: 'Business Cards',
-        project: 'Buy through MOO or Zazzle',
+        description: 'Buy through MOO or Zazzle',
         done: true,
       }],
     };

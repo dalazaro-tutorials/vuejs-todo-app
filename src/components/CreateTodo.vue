@@ -18,8 +18,8 @@
             <input v-model="titleText" type="text">
           </div>
           <div class="field">
-            <label>Project</label>
-            <input v-model="projectText" type="text">
+            <label>Description</label>
+            <input v-model="descriptionText" type="text">
           </div>
 
           <div class="ui two button attached buttons">
@@ -47,7 +47,7 @@ export default {
     // resets to an empty form, not currently creating
     return {
       titleText: '',
-      projectText: '',
+      descriptionText: '',
       isCreating: false,
     };
   },
@@ -59,16 +59,16 @@ export default {
       this.isCreating = false;
     },
     sendForm() {
-      if (this.titleText.length > 0 && this.projectText.length > 0) {
+      if (this.titleText.length > 0 && this.descriptionText.length > 0) {
         const title = this.titleText;
-        const project = this.projectText;
+        const description = this.descriptionText;
         this.$emit('create-todo', {
           title,
-          project,
+          description,
           done: false,
         });
         this.titleText = '';
-        this.projectText = '';
+        this.descriptionText = '';
         this.isCreating = false;
       }
     },
