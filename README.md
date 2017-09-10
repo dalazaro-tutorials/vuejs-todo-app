@@ -1,3 +1,5 @@
+<img src="https://vuejs.org/images/logo.png" width="100">
+
 # Vue.js To-Do App
 
 This project stems from the completion of [this Vue.js 2 tutorial from scotch.io](https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2). It's a pretty lazy tutorial ripe with typos, which I was able to work around with my working knowledge of ES6 and React.
