@@ -1,10 +1,17 @@
+<!-- CreateTodo component: add a new todo to the hard-coded data array using form -->
 <template>
   <div class="ui basic content center aligned segment">
+
+    <!-- if not currently creating, a button with a plus icon is rendered below the todos -->
     <button class="ui basic button icon" v-on:click="openForm" v-show="!isCreating">
       <i class="plus icon"></i>
     </button>
+
+    <!-- if currently creating, show a form to create new todo -->
     <div class="ui centered card" v-show="isCreating">
       <div class="content">
+        <h4>New To-Do</h4>
+
         <div class="ui form">
           <div class="field">
             <label>Title</label>
@@ -14,24 +21,30 @@
             <label>Project</label>
             <input v-model="projectText" type="text">
           </div>
+
           <div class="ui two button attached buttons">
-            <button class="ui basic blue button" v-on:click="sendForm()">
+            <button
+              class="ui basic blue button"
+              v-on:click="sendForm()">
               Create
             </button>
-            <button class="ui basic red button" v-on:click="closeForm">
+            <button
+              class="ui basic red button"
+              v-on:click="closeForm">
               Cancel
             </button>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 </template>
 
-<script type="text/javascript">
-
+<script>
 export default {
   data() {
+    // resets to an empty form, not currently creating
     return {
       titleText: '',
       projectText: '',
@@ -61,5 +74,4 @@ export default {
     },
   },
 };
-
 </script>

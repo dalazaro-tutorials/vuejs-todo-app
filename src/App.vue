@@ -1,3 +1,4 @@
+<!-- This component gets rendered inside the div#app in index.html. -->
 <template>
   <div>
     <!-- Renders TodoList component -->
@@ -17,6 +18,7 @@ export default {
     TodoList,
     CreateTodo,
   },
+  // hard-coded starter data
   data() {
     return {
       todos: [{

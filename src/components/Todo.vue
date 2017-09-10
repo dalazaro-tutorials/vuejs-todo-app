@@ -1,4 +1,4 @@
-<!-- Todo template: render each todo from the hard-coded data using this template -->
+<!-- Todo component: render each todo from the hard-coded data using this template -->
 <template>
   <div class="ui centered card">
 
@@ -11,7 +11,7 @@
         {{ todo.project }}
       </div>
       <div class="extra content">
-        <span class="right floated edit icon" v-on:click="showForm()">
+        <span class="right floated edit icon" v-on:click="showForm">
           <i class="edit icon"></i>
         </span>
         <span class="right floated trash icon" v-on:click="deleteTodo(todo)">
@@ -39,17 +39,18 @@
       </div>
     </div>
 
+    <!-- If todo is done, green "completed" status will render; if not, red "pending" status will render -->
     <div class="ui bottom attached green basic button" v-on:click="pendingTodo(todo)" v-show="todo.done">
       Completed
     </div>
     <div class="ui bottom attached red basic button" v-on:click="completeTodo(todo)" v-show="!todo.done">
       Pending
     </div>
+
   </div>
 </template>
 
-<script type="text/javascript">
-
+<script>
 export default {
   props: ['todo'],
   data() {
@@ -76,5 +77,4 @@ export default {
     },
   },
 };
-
 </script>

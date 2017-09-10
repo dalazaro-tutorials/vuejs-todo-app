@@ -1,3 +1,4 @@
+<!-- This component holds a compiled list of todos from the hard-coded data from App.vue -->
 <template>
   <div>
     <!-- JavaScript expressions in Vue are enclosed in double curly brackets. -->
@@ -18,8 +19,7 @@
   </div>
 </template>
 
-<script type="text/javascript">
-
+<script>
 import Todo from './Todo';
 
 export default {
@@ -42,9 +42,4 @@ export default {
     },
   },
 };
-
 </script>
-
-<!-- This app used Semantic-UI for 95% of the styling, so no need for styles here. -->
-<style>
-</style>
