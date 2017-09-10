@@ -1,9 +1,9 @@
 <template>
   <div>
-    <!-- Render the TodoList component -->
-    <!-- TodoList becomes -->
+    <!-- Renders TodoList component -->
     <todo-list v-bind:todos="todos"></todo-list>
-    <create-todo v-on:add-todo="addTodo"></create-todo>
+    <!-- Renders CreateTodo component -->
+    <create-todo v-on:create-todo="createTodo"></create-todo>
   </div>
 </template>
 
@@ -39,11 +39,8 @@ export default {
     };
   },
   methods: {
-    addTodo(title) {
-      this.todos.push({
-        title,
-        done: false,
-      });
+    createTodo(newTodo) {
+      this.todos.push(newTodo);
     },
   },
 };
