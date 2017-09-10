@@ -1,0 +1,61 @@
+<template>
+  <div>
+    <!-- Render the TodoList component -->
+    <!-- TodoList becomes -->
+    <todo-list v-bind:todos="todos"></todo-list>
+    <create-todo v-on:add-todo="addTodo"></create-todo>
+  </div>
+</template>
+
+<script>
+import TodoList from './components/TodoList';
+import CreateTodo from './components/CreateTodo';
+
+export default {
+  name: 'app',
+  components: {
+    TodoList,
+    CreateTodo,
+  },
+  data() {
+    return {
+      todos: [{
+        title: 'Ready job search materials',
+        project: 'Personal portfolio / Resume / LinkedIn / Clean-up GitHub',
+        done: true,
+      }, {
+        title: 'Lightning Talk',
+        project: 'Prep and present Vue.js',
+        done: false,
+      }, {
+        title: 'WDI 39 Final Project',
+        project: 'Plan / Develop / Present',
+        done: false,
+      }, {
+        title: 'Business Cards',
+        project: 'Buy through MOO or Zazzle',
+        done: true,
+      }],
+    };
+  },
+  methods: {
+    addTodo(title) {
+      this.todos.push({
+        title,
+        done: false,
+      });
+    },
+  },
+};
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
