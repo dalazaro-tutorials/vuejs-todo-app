@@ -1,6 +1,8 @@
-# vue-todo-app
+# Vue.js To-Do App
 
-> A Vue.js project
+This project stems from the completion of [this Vue.js 2 tutorial from scotch.io](https://scotch.io/tutorials/build-a-to-do-app-with-vue-js-2). It's a pretty lazy tutorial ripe with typos, which I was able to work around with my working knowledge of ES6 and React.
+
+Follow the tutorial to get the basic gist of how Vue.js works, then clone my repo to check out my fixes to the issues.
 
 ## Build Setup
 
@@ -24,4 +26,5 @@ npm run unit
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Intro to Vue.js
+[Here's my cheat sheet to Vue.js](https://gist.github.com/dalazaro/ea61a64ffb94f9ea2cbbc6399cbbbdc2), which I wrote for my lightning talk in WDI 39 at GA SF.
